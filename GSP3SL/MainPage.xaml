@@ -3,10 +3,18 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
     mc:Ignorable="d"
     d:DesignHeight="300" d:DesignWidth="400">
 
     <Grid x:Name="LayoutRoot" Background="White">
-
+        <sdk:TabControl x:Name="Tabbis">
+            <sdk:TabItem Name="Tab1" Header="Tab 1" Background="Azure">
+                <TextBlock Text="Content tab 1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></TextBlock>
+            </sdk:TabItem>
+            <sdk:TabItem Name="Tab2" Header="Tab 2" Background="Aqua">
+                <TextBlock Text="Content tab 2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></TextBlock>
+            </sdk:TabItem>
+        </sdk:TabControl>
     </Grid>
 </UserControl>
